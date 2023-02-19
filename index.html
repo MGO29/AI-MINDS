@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Minds Technologies</title>
+    <meta name="description" content="AI Mind's team of UX and interactive 
+    designers innovate great UIs for web applications. 
+    We use agile methodologies, user-centered design, 
+    and cutting-edge tools to help our customers succeed.">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="form-submit.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,500i,700,900&amp;display=swap"
+    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Yellowtail&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  </head>
+  <body>
+    <script>
+      $(document).ready(function() {
+    $(".learn-more").click(function() {
+      var popupId = $(this).data("popup-id");
+      $("#" + popupId).show();
+    });
+  
+    $(".modal .close-button").click(function() {
+      $(this).closest(".popup").hide();
+    });
+  });
+    </script>
+    <header class="header-component">
+      <a class="logo" ></a>
+        <nav>
+            <ul class="nav-list">
+              <li>
+                <a href="#home">WORK</a>
+              </li>
+              
+              <li>
+                <a href="#services">SERVICE</a>
+              </li>
+              <li>
+                <a href="#about">COMPANY</a>
+              </li>
+              <li>
+                <a href="#contact">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+          <div style="padding-right: 25px;"><a class="mdc-button orange arrow" href="#contact">Start Your Project</a></div>
+    </header>
+    <nav class="mobile-navbar">
+      <ul id="menu-header-menu-1" class="menu">
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39">
+          <a href="#home">Work</a></li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38">
+          <a href="#services">Services</a></li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45">
+          <a href="#about">Company</a></li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40">
+          <a href="#contact">Articles</a></li>
+      </ul>        
+    </nav>
+    <section id="home">
+      <div >
+        <div class="page-width">
+            <div class="section-title-component">
+                <div class="title-rule"></div>
+                <h1 class="section-title">
+                  We simplify the <strong>most complex issues</strong> into simple, easy to understand designs and user experiences.            </h1>
+                <div class="section-description">We develop highly productive, simple, intelligent software to automate and improve the business process. This helps our customers to streamline the processes.</div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="services">
+        <h2>OUR SERVICES</h2>
+        <div class="services-container">
+            <div class="service">
+                <img src="/assets/img/webapp.png" alt="Web Development">
+                <h3>Web Application Development</h3>
+                <p>We offer custom web development services to meet your business needs.</p>
+                <button class="learn-more" data-popup-id="web-app">Learn More</button>
+                <div id="modal" class="modal" id="web-app">
+                    <div class="modal-content">
+                        <span class="close-button">&times;</span>
+                        <p>Our team of experts has experience in various modern cutting-edge technologies and
+                             can build custom web applications for different business verticals.</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="service">
+                <img src="assets/img/mobile.png" alt="Mobile Development">
+                <h3>Mobile Development</h3>
+                <p>We specialize in developing high-quality mobile apps for different platforms.</p>
+                <button class="learn-more">Learn More</button>
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-button">&times;</span>
+                        <p>We offer high-quality mobile application development services, 
+                            suited for clients who want to propagate their business using 
+                            the most widely used smartphone OS platform. We have the expertise 
+                            developing cross-platform mobile applications for diverse fields including 
+                            education, manufacturing, marketing, sales, sports, etc</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service">
+                <img src="assets/img/digital-mar.png" alt="Digital Marketing">
+                <h3>Digital Marketing</h3>
+                <p>We provide digital marketing solutions to help increase your online presence.</p>
+                <button class="learn-more">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-clients">
+      <h2>EXPERIENCE & EXPERTISE
+      </h2>
+      <div class="client-logo-container">
+        <div class="client-logo">
+          <img src="assets/client/aravind-eye.jpg" alt="Client 1">
+        </div>
+        <div class="client-logo">
+          <img src="assets/client/v-guard.png" alt="Client 2">
+        </div>
+      </div>
+      <!-- add more client logos as needed -->
+    </section>
+<!--     
+    
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="services-container">
+        <div class="service">
+          <img src="/assets/img/webapp.png" alt="Web Development">
+                    <h3>Web Application Development</h3>
+          <p>We offer web application development services that are tailored to meet the specific needs of your business. Our team of experts has experience in various modern cutting-edge technologies and can build custom web applications for different business verticals.</p>
+        </div>
+        <div class="service">
+          <img src="assets/img/mobile.png" alt="Mobile Development">
+          <h3>Mobile Application Development</h3>
+          <p>We offer high-quality mobile application development services, suited for clients who want to propagate their business using the most widely used smartphone OS platform. We have the expertise developing cross-platform mobile applications for diverse fields including education, manufacturing, marketing, sales, sports, etc.</p>
+        </div>
+        <div class="service">
+          <img src="assets/img/website.png" alt="Website Development">
+          <h3>Website Development</h3>
+          <p>We provide fully customized website to help your brand succeed with eye-catching design and presentations. Our main agenda is dedicating ourselves to provide a user-friendly website to best present you to the competitive market. We dedicate ourselves to provide an attractive, informative and well-designed website to support your business.</p>
+        </div>
+        <div class="service">
+          <img src="assets/img/e-com.png" alt="E-commerce">
+          <h3>E-Commerce Website</h3>
+          <p>We provide e-commerce website and dedicated e-business strategy for your products or services. Our e-commerce website includes: search engine friendly and well-disposed to social media, fully customizable and is open to third-party integration, adaptable so that you can alter prices, discounts, shipping, commissions, etc as and when needed, automated to generate customer profiles and buying history.</p>
+        </div>
+        <div class="service">
+          <img src="assets/img/digital-mar.png" alt="Digital Marketing">
+          <h3>Digital Marketing</h3>
+          <p>Our aim is to provide more customer visibility and make reach of the right products to right people. We offer a broad range of digital marketing services such as SEO, social media marketing, performance marketing, content marketing, and sales funnel approach to help our clients achieve their marketing goals.</p>
+        </div>
+        <div class="service">
+          <img src="assets/img/data-science.png" alt="Data Science">
+          <h3>Data Science</h3>
+                    <p>We provide artificial intelligence solutions that vary from machine learning to deep learning for situations that have traditionally required a significant amount of human expertise. Our team of experts in AI programming can help you participate in the race of improving business operations and enhancing customer experiences. We work on AI by implementing AI-powered applications and automating traditional business practices to achieve optimized organizational performance.</p>
+        </div>
+      </div>
+    </section> -->
+    <section id="technologies">
+        <h2>OUR TECHNOLOGIES EXPERTISE</h2>
+        <div class="row">
+            <div class="col">
+                <div class="technology">
+                    <img src="assets/img/java.png" alt="Java">
+                    <h3>Java</h3>
+                </div>
+                <div class="technology">
+                    <img src="assets/img/js.png" alt="JavaScript">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="technology">
+                    <img src="assets/img/vuejs.png" alt="Vue.JS">
+                    <h3>Vue.JS</h3>
+                </div>
+            </div>
+            <div class="col">
+                <div class="technology">
+                    <img src="assets/img/angular-js.png" alt="AngularJS">
+                    <h3>AngularJS</h3>
+                </div>
+                <div class="technology">
+                    <img src="assets/img/React.png" alt="React">
+                    <h3>React JS</h3>
+                </div>
+                <div class="technology">
+                    <img src="assets/img/PHP.png" alt="PHP">
+                    <h3>PHP</h3>
+                </div>
+            </div>
+            <div class="col">
+                <div class="technology">
+                    <img src="assets/img/Microsoft_.NET.svg" alt=".NET">
+                    <h3>.NET</h3>
+                </div>
+                <div class="technology">
+                    <img src="assets/img/React.png" alt="React Native">
+                    <h3>React Native</h3>
+                </div>
+                <div class="technology">
+                    <img src="assets/img/flutter.png" alt="Flutter">
+                    <h3>Flutter</h3>
+                </div>
+            </div>
+            <div class="col">
+                <div class="technology">
+                    <img src="assets/img/ionic.png" alt="Ionic Framework">
+                    <h3>Ionic Framework</h3>
+                </div>
+                <div class="technology">
+                    <img src="assets/img/python.png" alt="Python">
+                    <h3>Python</h3>
+                </div>
+                <div class="technology">
+                    <img src="assets/img/Laravel.png" alt="Laravel">
+                    <h3>Laravel</h3>
+                </div>
+            </div>
+            <div class="col">
+                <div class="technology">
+                    <img src="assets/img/angular.png" alt="Angular">
+                    <h3>Angular</h3>
+                </div>
+                <div class="technology">
+                    <img src="assets/img/node_js.png" alt="Node JS">
+                    <h3>Node JS</h3>
+                </div>
+                <div class="technology">
+                    <img src="assets/img/wordpress.png" alt="WordPress">
+                    <h3>WordPress</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    
+    <section id="about" class="about-container">
+      <h2 class="align-center">ABOUT US</h2>
+      <p>
+        Our goal is to streamline processes for our customers and help them achieve optimized
+         organizational performance. From web and mobile application development, to e-commerce 
+         and digital marketing, we offer a wide range of services to meet the unique needs of 
+         any business. We also specialize in data science and artificial intelligence, utilizing
+         leading technologies such as machine learning and natural language processing to drive 
+         growth and success for our clients. At AI Minds Technologies, we are dedicated to providing 
+         exceptional software solutions and dedicated customer support.
+      </p>
+    </section>
+    <footer id="contact" class="contact-container">
+      <div class="contact-us">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+          <div class="info-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>123 Main St, Anytown USA</p>
+          </div>
+          <div class="info-box">
+            <i class="fas fa-phone"></i>
+            <p>123-456-7890</p>
+          </div>
+          <div class="info-box">
+            <i class="fas fa-envelope"></i>
+            <p>info@yourcompany.com</p>
+          </div>
+        </div>
+      </div>  
+    </footer>    
+  </body>
+</html>
+
