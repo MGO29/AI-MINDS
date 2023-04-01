@@ -12,6 +12,7 @@ html {
     letter-spacing: -0.02em;
     font-weight: 400;
     height: 100%;
+    margin: 0px;
   }
   
 
@@ -101,7 +102,15 @@ html {
 }
 
 
-
+.sub-titles{
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.35rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #929CA6;
+  margin-bottom: 20px;
+}
 .header-component a.logo {
   display: block;
   background-image: url(/assets/logo.svg);
@@ -315,16 +324,8 @@ nav.mobile-navbar ul li a {
     text-align: center;
     padding-top: 80px;
 }
-.page-width {
-  max-width: 1160px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  z-index: 1;
-}
 .section-title-component {
-  max-width: 680px;
+  max-width: 60rem;
   width: 100%;
   margin-top: 105px;
   margin-left: auto;
@@ -333,6 +334,7 @@ nav.mobile-navbar ul li a {
   color: #64707d;
   font-size: 18px;
   font-weight: 400;
+  margin-bottom: 35px;
 }
 .title-rule{
   margin-left: auto;
@@ -344,12 +346,21 @@ nav.mobile-navbar ul li a {
     width: 20%;
 }
 .section-title{
-  font-size: 37px;
-    font-weight: 400;
+  font-size: 2.5rem;
+    font-weight: 500;
     line-height: 40px;
+    text-align: center;
+    color:#242B33
 }
 .section-description{
   font-size: 16px;
+  margin-top: 25px;
+}
+.description{
+  color: #64707D;
+  line-height: 1.8rem;
+  font-size: 1.3rem;
+  text-align: center;
   margin-top: 25px;
 }
 strong {
@@ -379,8 +390,11 @@ strong {
 .services-container {
     display: flex;
     flex-wrap: wrap;
+    align-items: stretch;
     justify-content: space-between;
-    align-items: center;
+    gap: 40px;
+    width: 75rem;
+    margin: auto;
 }
 
 .service {
@@ -391,11 +405,9 @@ strong {
 }
 
 .service img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 20px;
+  height: 180px;
+  object-fit: cover;
 }
-
 .service h3 {
     font-size: 18px;
     font-weight: 600;
@@ -460,21 +472,47 @@ nav a:hover {
 }
 
 
-/* Services */
-.services-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
 .service {
-    padding: 10px;
-    flex: 1;
-    text-align: center;
-    margin: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    border-radius: 5px;
+  width: calc((100% / 3) - 10px);
+  margin-bottom: 0;
+  background-color: #FFF;
+  border-radius: 5px;
+  border: 1px solid #DFE2E6;
+}
+@media (max-width: 959px) {.service {
+    width: 100% !important;
+    margin-bottom: 20px;
+}
+.services-container{
+  width: 100%;
+}}
+.service-image{
+  border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    border-bottom: 1px solid #DFE2E6;
+    display: block;
+    max-height: 180px;
+}
+.service-point li:before{
+  content: "";
+  background-image: url(./assets/arrow-right-gray.svg);
+  background-size: 15px;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  position: relative !important;
+  display: block;
+  position: absolute;
+  right: 25px;
+  top: 23px;
+}
+.service-point li{
+  padding-left: 30px;
+  position: relative;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
 .service:hover {
@@ -494,6 +532,7 @@ nav a:hover {
   width: 100%;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
 }
 
 .row {
@@ -526,7 +565,9 @@ nav a:hover {
     text-align: center;
 }
 .about-container{
-    margin: 20px;
+    padding: 20px;
+    background-color: #191e25;
+    color: #64707D;
 }
 .contact-us {
     text-align: center;
@@ -556,16 +597,61 @@ nav a:hover {
   }
   
   .client-logo {
-    width: 10%; /* adjust as needed */
     margin: 0.5rem;
+    width: 270px;
+    height: 240px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #DFE2E6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .services-content{
+    padding: 30px;
+  }
+  .service-title-prefix{
+    font-size: 15px;
+    color:#64707D;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: left;
+  }
+  .service-title{
+    line-height: 2.9rem;
+    font-weight: 500;
+    letter-spacing: -0.05rem;
+    color: #242B33;
+    font-size: 1.8rem;
+    text-align: left;
+    display: block;
+  }
+  .rule{
+    margin-left: 0;
+    margin-top: 10px;
+    width: 20%;
+    margin-right: auto;
+    background-color: #FAA338;
+    height: 4px;
+    border-radius: 3px;
+    margin-bottom: 30px;
   }
   
   .client-logo img {
-    width: 95px;
     max-width: 100%;
     height: 70px;
+    filter: grayscale(1);
+  }
+  .client-logo img:hover{
+    filter: grayscale(0);
   }
   footer{
     background-color: #242b33;
+  }
+  #next{
+    margin: 20px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
   
