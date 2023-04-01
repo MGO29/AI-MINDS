@@ -654,4 +654,14 @@ nav a:hover {
     margin-top: 4rem;
     margin-bottom: 4rem;
   }
-  
+  #technologies{
+    margin-right: 200px;
+    margin-left: 200px;
+  }
+  @media (max-width: 959px) {
+
+    #technologies{
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
